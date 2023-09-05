@@ -114,6 +114,25 @@
     background-color: var(--black);
 }
 
+.bg-glass {
+    --bs-bg-opacity: 1;
+    background: var(--blue-gradient, radial-gradient(115.73% 100.05% at -7.32% -8.65%, rgba(36, 129, 255, 0.25) 0%, rgba(12, 16, 40, 0.00) 100%), linear-gradient(199deg, rgba(241, 244, 255, 0.17) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(20, 22, 38, 0.50));
+    box-shadow: 0px 24px 16px -16px rgba(0, 0, 0, 0.05) !important;
+    backdrop-filter: blur(20px);
+    color: white;
+    border: 0;
+    margin-bottom: 8px;
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #00000000;
+    border-radius: 12px 12px 12px 12px;
+}
+
 body {
     margin: 0;
     line-height: normal;
@@ -176,6 +195,10 @@ ul.navbar-nav {
     flex-direction: row;
 }
 
+nav.navbar.navbar-expand-lg.navbar-dark {
+    padding: 20px 0;
+}
+
 .gg-8 {
     grid-gap: 8px;
 }
@@ -219,14 +242,36 @@ ul.navbar-nav {
     transition: all 0.6s;
 }
 
+.btn-transparent {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+
+.table-responsive {
+    width: 100%;
+}
+
+/*Navbar*/
+
+
+div#navbarSupportedContent {
+    width: 100%;
+}
+
+div#navbarSupportedContent ul {
+    width: 100%;
+    display: flex;
+}
+
 /* Cards */
 .card {
     border-radius: 24px;
-    background: var(--blue-gradient, radial-gradient(115.73% 100.05% at -7.32% -8.65%, rgba(36, 129, 255, 0.25) 0%, rgba(12, 16, 40, 0.00) 100%), linear-gradient(199deg, rgba(241, 244, 255, 0.17) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(20, 22, 38, 0.50));
-    box-shadow: 0px 24px 16px -16px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(20px);
     padding: 20px;
-    height: 100%;
+    background-color: transparent;
+    width: 100%;
 }
 
 .card-body {
@@ -244,6 +289,12 @@ ul.navbar-nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.card-balances {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .card-title {
@@ -310,17 +361,50 @@ p.card-number {
 }
 
 
+/* Table */
+table#life_staking_table {
+    width: 100%;
+    text-align: center;
+    border-bottom: 0;
+}
+
+table#life_staking_table thead tr th, table#life_staking_table tbody tr td {
+    padding: 16px 8px;
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#life_staking_table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.dd-submenu .disabled i {
+    opacity: 0.4;
+}
+.dd-submenu a.dropdown-item {
+    display: inline-flex;
+    align-items: center;
+    grid-gap: 8px;
+    /* padding: 8px 16px; */
+}
+
+.dd-submenu a.dropdown-item i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Progress */
 
 
 .progress {
-    width: 150px;
-    height: 150px !important;
+    width: 120px;
+    height: 120px !important;
     float: left;
-    line-height: 150px;
+    line-height: 120px;
     background: none;
-    margin: 20px;
+/*     margin: 20px; */
     box-shadow: none;
     position: relative;
 }
@@ -389,7 +473,7 @@ p.card-number {
     background: transparent;
     font-size: 24px;
     color: #fff;
-    line-height: 135px;
+    line-height: 110px;
     text-align: center;
     position: absolute;
     top: 5%;
@@ -455,11 +539,11 @@ p.card-number {
 
 /* Accordion FAQ */
 .accordion-item {
-    background: var(--blue-gradient, radial-gradient(115.73% 100.05% at -7.32% -8.65%, rgba(36, 129, 255, 0.25) 0%, rgba(12, 16, 40, 0.00) 100%), linear-gradient(199deg, rgba(241, 244, 255, 0.17) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(20, 22, 38, 0.50));
-    box-shadow: 0px 24px 16px -16px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(20px);
+    /* background: var(--blue-gradient, radial-gradient(115.73% 100.05% at -7.32% -8.65%, rgba(36, 129, 255, 0.25) 0%, rgba(12, 16, 40, 0.00) 100%), linear-gradient(199deg, rgba(241, 244, 255, 0.17) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(20, 22, 38, 0.50)); */
+    /* box-shadow: 0px 24px 16px -16px rgba(0, 0, 0, 0.05); */
+    /* backdrop-filter: blur(20px); */
     color: white;
-    border: 0;
+    border-radius: 12px!important;
     margin-bottom: 8px;
 }
 
