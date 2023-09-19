@@ -47,8 +47,7 @@
                                 <div class="eth">BSC</div>
                             </div>
                         </li>
-                        <li class="nav-item d-none d-md-block"><a class="btn btn-primary btn-sm px-4 me-sm-3" href="#features">Connect
-                                Wallet</a></li>
+                        <li class="nav-item d-none d-md-block"><a class="btn btn-primary btn-sm px-4 me-sm-3" data-bs-toggle="modal" data-bs-target="#modal_wrong_network">Connect Wallet</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,37 +89,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-12 d-flex align-items-stretch">
-                        <div class="card bg-glass mb-3 text-white">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-6 col-12 d-flex flex-direction-column align-items-center justify-content-center my-3">
-                                        <div class="progress blue">
-                                            <span class="progress-left">
-                                                <span class="progress-bar"></span>
-                                            </span>
-                                            <span class="progress-right">
-                                                <span class="progress-bar"></span>
-                                            </span>
-                                            <div class="progress-value">90%</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-12 my-3">
-                                        <div class="section_wrapper">
-                                            <div class="card-section">
-                                                <h6 class="card-title">Staking Pool</h6>
-                                                <p class="card-number">4,862</p>
-                                            </div>
-                                            <div class="card-section">
-                                                <h6 class="card-title">Total</h6>
-                                                <p class="card-number">2,671</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="col-xl-8 col-md-12 d-flex align-items-stretch">
                         <div class="card bg-glass mb-3 text-white">
                             <div class="card-body">
@@ -207,6 +176,41 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-xl-4 col-md-12 d-flex align-items-stretch">
+                        <div class="card bg-glass mb-3 text-white">
+                            <div class="card-body">
+                                <div class="w-100 d-flex flex-column flex-xl-row justify-content-xl-center align-items-xl-center gap-xl-4">
+                                    <div class="col d-flex flex-direction-column align-items-center justify-content-center my-3">
+                                        <div class="progress_wrapper">
+                                            <div class="progress blue">
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value">90%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col my-3">
+                                        <div class="section_wrapper">
+                                            <div class="card-section">
+                                                <h6 class="card-title">Staking Pool</h6>
+                                                <p class="card-number">4,862</p>
+                                            </div>
+                                            <div class="card-section">
+                                                <h6 class="card-title">Total</h6>
+                                                <p class="card-number">2,671</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -220,74 +224,437 @@
                     <div class="col">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item bg-glass">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                                         How the platform works?
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <b>Approved Staking</b>
-                                        <p>Allows your wallet to interact with the smart contract. You must press this
-                                            button prior to the first time you stake.</p>
+                            
+                                        <p>Allows your wallet to interact with the smart contract. You must press this button prior to the first
+                                            time you stake.</p>
+                            
                                         <b>Invest</b>
-                                        <p>Pressing this button will take you to a popup screen where you can input the
-                                            amount you wish to stake and confirm your stake.</p>
+                            
+                                        <p>Pressing this button will take you to a popup screen where you can input the amount you wish to stake and
+                                            confirm your stake.</p>
+                            
                                         <b>Harvest</b>
+                            
                                         <p>This will allow you to withdraw your available earned rewards only.</p>
+                            
                                         <b>Withdraw</b>
-                                        <p>Withdrawing will allow you to withdraw your original staked token amount and
-                                            your earned rewards at the end of the relevant staking period.</p>
+                            
+                                        <p>Withdrawing will allow you to withdraw your original staked token amount and your earned rewards at the
+                                            end of the relevant staking period.</p>
+                            
                                         <b>Re Invest</b>
-                                        <p>This will allow you to re-invest your staking rewards available or at the end
-                                            of the lock in period to re-stake the initial staked token amount.</p>
+                            
+                                        <p>This will allow you to re-invest your staking rewards available or at the end of the lock in period to
+                                            re-stake the initial staked token amount.</p>
+                            
                                         <b>Staking</b>
-                                        <p>Minimum amount required for staking: 10,000<br>
-                                            Maximum amount allowed for staking: no maximum
-                                            <br><br>
-                                            When deciding on an amount to stake we recommend
-                                            you calculate whether the amount you are staking is viable against the gas
-                                            fee amount.
-                                            <br>
-                                        </p>
-                                        <b>Available Terms &amp; Rates</b>
-                                        <p>12 Months: 39%<br>6 Months: 35%<br>1 Month: 30%<br></p>
+                            
+                                        <p>Minimum amount required for staking: 10,000Maximum amount allowed for staking: no maximumWhen deciding on
+                                            an amount to stake we recommend you calculate whether the amount you are staking is viable against the
+                                            gas fee amount.</p>
+                            
+                                        <b>Available Terms&amp; Rates</b>
+                            
+                                        <p>12 Months: 39%</p>
+                                        <p>6 Months: 35%</p>
+                                        <p>1 Month: 30%</p>
+                            
                                     </div>
                                 </div>
                             </div>
+                            
+                            
                             <div class="accordion-item bg-glass">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Accordion Item #2
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        Is there a LIFE wallet? Where can I access it?
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <strong>This is the second item's accordion body.</strong> It is hidden by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-                                        CSS or overriding our default variables. It's also worth noting that just about
-                                        any HTML can go within the <code>.accordion-body</code>, though the transition
-                                        does limit overflow.
+                                        <p>We are currently working on the development of the LIFE Wallet. Until then, you will require a software
+                                            or hardware
+                                            wallet which is compatible with ERC20 tokens, such as MetaMask, Trust Wallet or Ledger. We are unable to
+                                            guarantee that
+                                            other wallets may connect or function correctly with the ERC20 smart
+                                            contract.</p>
+                            
+                                        <p></p>You will require an amount of ETH to be available in your wallet for gas fees. Every interaction with
+                                        the smart contract
+                                        will incur a gas fee.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        What is staking?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Staking is earning rewards for locking in your tokens for a certain period.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        So how does the staking system work?
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The LIFE Staking System version 2.0 works via a blockchain smart contract on the Ethereum network which
+                                        locks in the
+                                        tokens for the duration of the period selected.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        Can I stake in multiple lock up periods?
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                        Can I add to the tokens staked?
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, you can add additional tokens to any of the three options, however this will reset the lock in period
+                                        to its full
+                                        period.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                        If I want to stake any additional tokens – how do I do it?
+                                    </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        You connect the wallet address that is linked to our LIFE
+                                        staking portal, select the term you wish to stake in, and click ‘Invest’ and then
+                                        enter the additional amount you would like to stake. Note however that each time you
+                                        add to your staked token amount on any of the three staking periods, the lock in
+                                        period will reset to the full staking period (please refer to the example in the
+                                        previous answer).
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                        If I want to allocate tokens for staking to two or more staking pools, does it mean that I have to pay for
+                                        gas each
+                                        time?
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, each interaction with the smart contract requires a
+                                        gas fee.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                        Can I withdraw my staking rewards prior to the end of the staking period?
+                                    </button>
+                                </h2>
+                                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, staking rewards are calculated on a daily rate and issued daily. To withdraw, you simply need to click
+                                        'Harvest',
+                                        which will prompt your wallet to request authorization of this transaction. After you confirm (&amp; pay a
+                                        gas fee), the
+                                        tokens will appear on your wallet and can be transferred, sold or re-staked in a different staking period.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                        Can I exit the staking period early? Is there a penalty for doing so?
+                                    </button>
+                                </h2>
+                                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        You cannot exit the staking period prior to its end – the smart contract does not allow for that. You can
+                                        re-claim your
+                                        staked tokens only at the end of the staking period. You can however harvest your staking rewards at any
+                                        time.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                        If I want to re-stake my rewards instead of harvesting them, how do I go about it?
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        You simply click the 'Re-invest' button, authorize the transaction on your wallet, and enjoy greater
+                                        rewards.
+                            
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item bg-glass">
                                 <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Accordion Item #3
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                        What happens if I do not claim my staked token amount and earned rewards at the end of the staking period?
+                                        Will it still
+                                        keep earning rewards?
+                            
                                     </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <strong>This is the third item's accordion body.</strong> It is hidden by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element. These classes control the overall appearance, as well as the
-                                        showing and hiding via CSS transitions. You can modify any of this with custom
-                                        CSS or overriding our default variables. It's also worth noting that just about
-                                        any HTML can go within the <code>.accordion-body</code>, though the transition
-                                        does limit overflow.
+                                        Should you not withdraw or re-stake your original staked token amount and earned rewards at the end of the
+                                        staking
+                                        period, those tokens will stop earning rewards and will remain locked in the contract until you withdraw
+                                        them.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                        At the end of the staking period can I re-stake only part of the initial staked token amount?
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, you can withdraw the entire staked token amount and then re-stake only a partial amount of that initial
+                                        staked
+                                        token amount, this will involve two transactions and therefore two gas fees. You can however re-stake the
+                                        full amount
+                                        and benefit from only one gas fee.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                                        I do not see my staked tokens on my wallet! Help!
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Your staked tokens will not be visible in your software or hardware wallet, and will only be visible on the
+                                        interface of
+                                        our staking platform as they are locked into the smart contract. You will need to connect your wallet to our
+                                        staking
+                                        platform to view your staked amount(s) and earned rewards
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                                        Why don’t I see my earned rewards on my wallet?
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Your earned rewards are allocated to your wallet address via the smart contract, and can only be seen
+                                        provided you use
+                                        the same address you staked from to connect with the staking platform.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                                        Help! I have lost access to my original wallet? What happens next?
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Unfortunately if you have lost access to your Trust or Metamask wallet we will be unable to recover your
+                                        tokens for you
+                                        and advise you direct your queries to either of the wallet providers.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                                        How often are the staking rewards paid out? Is it after the lock-in period elapses?
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Staking rewards are calculated and available for withdrawal daily.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                                        How do I claim my staking rewards?
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        To claim your staking rewards, once you are connected to the portal as mentioned above, you simply need to
+                                        click on
+                                        ‘Harvest’, pay a small gas fee and the tokens will be sent to your wallet.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                                        What are gas fees and why do I have to pay them?
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Gas fees are&nbsp;payments made by users to compensate for the computing energy required to process and
+                                        validate
+                                        transactions on the Ethereum blockchain. They are outside of our control.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                                        Who determines the gas fees?
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The exact price of the gas is determined by&nbsp;supply and demand between the network's miners, who can
+                                        decline to
+                                        process a transaction if the gas price does not meet their threshold, and users of the network who seek
+                                        processing
+                                        power.
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item bg-glass">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                                        Is there anything not covered here?
+                            
+                                    </button>
+                                </h2>
+                                <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Feel free to reach out to us at <a href="support@lifecrypto.life" target="_blank"
+                                            style="color: rgb(116, 153, 234);">
+                                            support@lifecrypto.life</a>, on our telegram group <a href="https://t.me/LIFE10101" target="_blank"
+                                            style="color: rgb(116, 153, 234);"> https://t.me/LIFE10101</a> or on twitter <a
+                                            href="https://twitter.com/lifelabshq" target="_blank" style="color: rgb(116, 153, 234);">
+                                            https://twitter.com/lifelabshq</a>
+                            
                                     </div>
                                 </div>
                             </div>
@@ -314,6 +681,28 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal_wrong_network" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="modal_wrong_networkLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-glass">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="modal_wrong_networkLabel"><i class="modal-icon"><img src="assets/alert-circle.svg"></i>Wrong Network</h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i>
+
+</button>
+                </div>
+                <div class="modal-body">
+                    Please change to ETH Mainnet
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary">Change Network</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
